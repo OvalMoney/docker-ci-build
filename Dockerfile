@@ -1,6 +1,6 @@
-FROM docker:17.09
+FROM docker:17.12
 
-ENV AWSCLI_VERSION "1.11.185"
+ENV AWSCLI_VERSION "1.14.44"
 
 RUN apk update && apk add \ 
       bash \
