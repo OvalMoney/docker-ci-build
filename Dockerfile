@@ -6,13 +6,13 @@ RUN apk --no-cache add \
       bash \
       curl \
       git \
-      openssh \
+      openssh-client \
       less \
       groff \
       jq \
       python \
       py-pip 
 
-RUN pip install --upgrade \
+RUN pip install --upgrade --no-cache-dir \
     pip \
     awscli==$AWSCLI_VERSION
