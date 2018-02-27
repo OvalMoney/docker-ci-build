@@ -5,6 +5,8 @@ ENV AWSCLI_VERSION "1.14.44"
 RUN apk update && apk add \ 
       bash \
       curl \
+      git \
+      openssh \
       less \
       groff \
       jq \
