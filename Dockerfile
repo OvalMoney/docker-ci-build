@@ -1,8 +1,8 @@
-FROM docker:17.12
+FROM docker:18.06
 
-ENV AWSCLI_VERSION "1.14.44"
+ENV AWSCLI_VERSION "1.16.8"
 
-RUN apk --no-cache add \ 
+RUN apk -v --no-cache add \ 
       bash \
       curl \
       git \
@@ -14,5 +14,4 @@ RUN apk --no-cache add \
       py-pip 
 
 RUN pip install --upgrade --no-cache-dir \
-    pip \
     awscli==$AWSCLI_VERSION
