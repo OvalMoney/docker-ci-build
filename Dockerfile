@@ -1,6 +1,6 @@
-FROM docker:18.06
+FROM docker:18.09
 
-ENV AWSCLI_VERSION "1.16.8"
+ENV AWSCLI_VERSION "1.16.169"
 
 RUN apk -v --no-cache add \ 
       bash \
