@@ -10,7 +10,7 @@ RUN apk -v --no-cache add \
       less \
       groff \
       jq \
-      python \
+      python3 \
       py-pip
 
 RUN pip install --upgrade --no-cache-dir \
